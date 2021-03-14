@@ -9,6 +9,7 @@ const offsetTops = contentItems.map((elem) => {
   return [ofs - clh / 2, ofs + clh / 2];
 });
 
+// 스크롤 이벤트
 window.addEventListener("scroll", (e) => {
   const { scrollTop } = e.target.scrollingElement;
   // do something
@@ -28,6 +29,7 @@ window.addEventListener("scroll", (e) => {
   
 });
 
+// 클릭 이벤트
 navElem.addEventListener("click", (e) => {
   const targetElem = e.target;
   if (targetElem.tagName === "BUTTON") {
