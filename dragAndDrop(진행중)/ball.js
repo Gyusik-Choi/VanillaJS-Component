@@ -27,9 +27,8 @@ ball.addEventListener('mousedown', (event) => {
   document.addEventListener('mousemove', onMouseMove);
 
   // 공을 드롭하고, 불필요한 핸들러를 제거합니다.
-  ball.addEventListener('mouseon', function() {
+  ball.addEventListener('mouseup', function() {
     document.removeEventListener('mousemove', onMouseMove);
-    ball.onmouseup = null;
   })
 
 })
