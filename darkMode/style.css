@@ -1,0 +1,60 @@
+.top-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.title {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.button {
+    /* grid 에서 차지하는 비율 안에서의 길이 기준 */
+    /* width: 15%; */
+    /* height: 5vh; */
+    position: relative;
+    width: 70px;
+    height: 35px;
+    background-color: rgb(136, 255, 0);
+    border: 1.5px solid rgb(136, 255, 0);
+    border-radius: 17.5px;
+    margin: auto auto;
+}
+
+.button-switch {
+    position: absolute;
+    left: 0;
+    background-color: gray;
+    width: 50%;
+    height: 35px;
+    border-radius: 17.5px;
+    cursor: pointer;
+    transition: left 0.3s;
+}
+
+.paragraph {
+    width: 50vw;
+    margin: 10vh auto;
+    color: rgb(0, 0, 0);
+}
+
+body.dark {
+    background-color: rgb(0, 0, 0);
+}
+
+body.dark .title {
+    color: rgb(255, 255, 255);
+}
+
+body.dark .button {
+    border: 1.5px solid rgb(255, 0, 200);
+    background-color: rgb(255, 0, 200);
+}
+
+body.dark .button .button-switch {
+    left: 35px;
+}
+
+body.dark .paragraph {
+    color: rgb(255, 255, 255);
+}
