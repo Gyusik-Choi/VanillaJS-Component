@@ -1,0 +1,51 @@
+* { /* global font */
+    font-family: Verdana;
+    font-size: 18px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin: 0px auto;
+}
+
+.root { 
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    top: 5%;
+}
+
+.route {
+    cursor: pointer;
+    width: 20%;
+    height: 20%;
+    /* vertically centered text */
+    border: 2px solid #555;
+    background: white;
+    text-align: center;
+}
+
+.route.selected { 
+    background: yellow; 
+}
+
+.content { 
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    top: 10%;
+    /* vertically centered text */
+    border: 2px solid #555;
+    margin: 0px auto;
+    text-align: center;
+}
